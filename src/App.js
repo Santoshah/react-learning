@@ -1,10 +1,15 @@
-import ExpenseItem from "./components/ExpenseItem";
+// import ExpenseItem from "./components/ExpenseItem";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
 
 function App() {
+
   return (
-    <div>
-      <h2>Let's get started!</h2>
-      <ExpenseItem></ExpenseItem>
+    <div className="App">
+      <Navbar />
+      <div className="content">
+        <Home></Home>
+      </div>
     </div>
   );
 }
