@@ -1,56 +1,71 @@
-.expense-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    padding: 0.5rem;
-    margin: 1rem 0;
-    border-radius: 12px;
-    background-color: #4b4b4b;
-  }
-  
-  .expense-item__description {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-end;
-    flex-flow: column-reverse;
-    justify-content: flex-start;
-    flex: 1;
-  }
-  
-  .expense-item h2 {
-    color: #3a3a3a;
-    font-size: 1rem;
-    flex: 1;
-    margin: 0 1rem;
-    color: white;
-  }
-  
-  .expense-item__price {
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background-color: #40005d;
-    border: 1px solid white;
-    padding: 0.5rem;
-    border-radius: 12px;
-  }
-  
-  @media (min-width: 580px) {
-    .expense-item__description {
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
-      flex: 1;
-    }
-  
-    .expense-item__description h2 {
-      font-size: 1.25rem;
-    }
-  
-    .expense-item__price {
-      font-size: 1.25rem;
-      padding: 0.5rem 1.5rem;
-    }
-  }
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+.blog-preview a{
+  text-decoration: none;
+}
+
+/* blog details page */
+.blog-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+}
+.blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}

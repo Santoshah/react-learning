@@ -1,3 +1,10 @@
 simple react snippets 
 
 sfc => stateless function component shortcuts
+
+To run local json as a server
+npx json-server --watch data/data.json --port 8000
+
+
+react router
+ npm install react-router-dom
